@@ -55,15 +55,26 @@ ul, li {
     background: #B94A48;
 }
 
+img
+ {
+    width:10%;/*adjust this value to your needs*/
+    max-width: the size of the image;/* so it wont get bigger and pixelated*/
+    height:auto;
+ }
+
 header {
     border-bottom: 1px solid #ddd;
 }
 
     header h2 {
-        font-size: 36px;
+        font-size: 46px;
+        color: #20419A;
         text-align: center;
-        margin: 15px;
+        margin: 10px;
     }
+    
+
+
 
 .nav {
     width: 960px;
