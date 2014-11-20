@@ -67,14 +67,21 @@ header {
 }
 
     header h2 {
-        font-size: 46px;
+	    font-size:x-large;
         color: #20419A;
         text-align: center;
-        margin: 10px;
+        margin: 10px;	
+    }
+    
+    header logo {
+	    
     }
     
 
-
+@font-face {
+	font-family: 'ApexNew';
+	src: url('TEST_PAGES/fonts/font.otf') format("opentype");
+}
 
 .nav {
     width: 960px;
