@@ -31,7 +31,8 @@ define(["dojo/_base/declare",
 			"dijit/form/VerticalRule",
 			"dijit/form/HorizontalRuleLabels",
 			"dijit/form/VerticalRuleLabels", 
-			"dijit/form/NumberSpinner"
+			"dijit/form/NumberSpinner",
+			"dijit/form/DateTextBox"
 ],
 		function (declare, WidgetBase, TemplatedMixin, WidgetsInTemplateMixin, template, lang) {
 			return declare([WidgetBase, TemplatedMixin, WidgetsInTemplateMixin], {
@@ -192,6 +193,10 @@ define(["dojo/_base/declare",
 
 					this.dropdownbutton1.startup();
 					this.combobutton1.startup();
+					
+					new dijit.form.DateTextBox({
+						
+					})
 				},
 
 				startup: function () {
