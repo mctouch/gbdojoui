@@ -32,11 +32,11 @@ define(["dojo/_base/declare",
 		    //anonymous function to load CSS files required for this module
 		    (function () {
 		        var css = [
-                    require.toUrl("../css_outputs/flat/dgrid/css/dgrid_rtl.css"),
-                    require.toUrl("../css_outputs/flat/dgrid/css/extensions/ColumnHider.css"),
-		            require.toUrl("../css_outputs/flat/dgrid/css/extensions/ColumnReorder.css"),
-                    require.toUrl("../css_outputs/flat/dgrid/css/extensions/ColumnResizer.css"),
-                    require.toUrl("../css_outputs/flat/dgrid/css/extensions/Pagination.css")
+                    require.toUrl("../../CSS/dgrid/css/dgrid_rtl.css"),
+                    require.toUrl("../../CSS/dgrid/css/extensions/ColumnHider.css"),
+		            require.toUrl(".../../../CSS/dgrid/css/extensions/ColumnReorder.css"),
+                    require.toUrl(".../../../CSS/dgrid/css/extensions/ColumnResizer.css"),
+                    require.toUrl("../../CSS/dgrid/css/extensions/Pagination.css")
 		        ];
 		        var head = document.getElementsByTagName("head").item(0),
                         link;
