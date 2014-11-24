@@ -4,6 +4,7 @@ define([
 	"./widgets/otherWidgets",
 	"./widgets/dgridWidget",
 	"./widgets/esriWidgets",
+	"./widgets/colorWidgets",
 	"dojo/dom",
 	"dojo/dom-class",
 	"dojo/dom-style",
@@ -13,7 +14,7 @@ define([
 	"dojo/parser",
 	"dojo/ready"],
 			function (
-                formWidgets, layoutWidgets, otherWidgets, dgridWidget, esriWidgets,
+                formWidgets, layoutWidgets, otherWidgets, dgridWidget, esriWidgets, colorWidgets,
                 dom, domClass, domStyle, on, query, array,
                 parser, ready) {
 				ready(function () {
@@ -23,6 +24,7 @@ define([
                         otherWidgetsContainer = null,
                         dgridWidgetContainer = null,
                         esriWidgetsContainer = null;
+                        colorWidgetsContainer = null;
 
 					parser.parse();
 
@@ -52,9 +54,14 @@ define([
 								        dgridWidgetContainer = new dgridWidget(null, "dgridWidgetContent");
 									}
 									break;
-								default:
+								case 4:
 								    if (!esriWidgetsContainer) {
 								        esriWidgetsContainer = new esriWidgets(null, "esriWidgetsContent");
+								    }
+								    break;
+								default:
+								    if (!colorWidgetsContainer) {
+									    colorWidgetsContainer = new colorWidgets(null, "colorWidgesContent");
 								    }
 								    break;
 							}
