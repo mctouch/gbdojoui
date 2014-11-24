@@ -1,0 +1,28 @@
+
+<html>
+<head>
+<script>
+	dojo.require("dojox.gfx");
+dojo.require("dojox.gfx.VectorText");
+ 
+var myfont = dojox.gfx.getVectorFont("TEST_PAGES/font/font.eot");
+	var s = dojox.gfx.createSurface(someNode, width, height);
+var g = s.createGroup();
+var phrase = myfont.draw(
+    g,
+    { text: "The rain in Spain falls mainly on the plain.", align: "middle" },
+    { size: "3em" },
+    "blue"
+);
+</script>
+</head>
+
+	<body>
+
+<font face="Arial">Arial --- ABCdef123</font>
+<font face="Wide Latin">Wide Latin --- ABCdef123</font>
+
+<div id="phrase">M</div>
+
+	</body>
+</html>
